@@ -1,6 +1,7 @@
 body{
-    font-family: 'Sansita Swashed', cursive;
+    font-family: 'Verdana', cursive;
     font-size: 20pt;
+    text-align: center;
 }
 #temperature{
     font-size: 50pt;
