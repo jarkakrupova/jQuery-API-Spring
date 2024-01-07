@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forecast</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <!-- <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.2.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <!--jQuery, linked from a CDN-->
+    <!-- <script type="text/javascript" src="http://use.typekit.com/oya4cmx.js"></script> -->
+    <!-- <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script> -->
+    <!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.2.min.js"></script> -->
+    <!--jQuery, linked from a CDN-->
+    <script src="forecast.js"></script>
+    <script type="text/javascript" src="https://use.typekit.com/oya4cmx.js"></script>
+    <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container border border-dark rounded">
+        <header>
+            <h1 class="text-center" id="location">Sydney</h1>
+        </header>
+        <!-- <section> -->
+            <!-- <div class="container text-center" id="weather_now"> -->
+                <!-- <div class="p-2 text-center" ">Ostrava</div> -->
+                <!-- <div class="p-2 text-center" id="temperature"></div>
+                <div class="p-2 text-center" id="description"></div>
+                <div class="p-2 text-center" id="wind"></div>
+                <div class="p-2 text-center" id="humidity"></div>
+                <div class="p-2 text-center" id="timestamp"></div> -->
+            <!-- </div> -->
+        <!-- </section> -->
+    </div>
+    <div class="text-2">Daily overview</div>
+    <table class="table table-bordered m-4" id="daily_max">
+        <thead class="table-header">
+            <tr class="thead-light">
+                <th>Min temp.</th>
+                <th>Max temp.</th>
+                <th>Avg. temp.</th>
+                <th>Chance of rain</th>
+                <th>Chance of snow</th>
+                <th>Total rain</th>
+                <th>Total snow</th>
+            </tr>
+        </thead>
+    </table>
+    <div class="text-2">Astro</div>
+    <table class="table table-bordered m-4" id="astro">
+        <thead class="table-header">
+            <tr class="thead-light">
+                <th>Sunrise</th>
+                <th>Sunset</th>
+                <th>Moonrise</th>
+                <th>Moonset</th>
+                <th>Moon phase</th>
+            </tr>
+        </thead>
+    </table>
+    <div class="text-2">Hourly forecast</div>
+    <table class="table table-bordered m-4" id="hourly_forecast">
+        <thead class="table-header">
+            <tr class="thead-light">
+                <th>Time</th>
+                <th>Icon</th>
+                <th>Condition</th>
+                <th>Temperature</th>
+                <th>Feelslike</th>
+                <th>Pressure</th>
+                <th>Humidity</th>
+                <th>Cloud</th>
+                <th>Rain</th>
+                <th>Snow</th>
+                <th>Wind</th>       
+            </tr>
+        </thead>
+    </table>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+</body>
+
+</html>
